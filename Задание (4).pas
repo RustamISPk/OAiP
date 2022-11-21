@@ -1,9 +1,27 @@
-﻿program lab_9_zadanie_4;
+program lab_9_zadanie_4;
 const n=5;
 var
   a:array[1..n] of integer;
   b:array[1..n] of integer;
   sum_a, sum_b, i:integer;
+procedure sum_array_a();
+var i:integer;
+begin
+    for i:=1 to n do
+    if a[i] > 0 then
+    begin
+      sum_a:=sum_a + a[i];
+    end;
+end;
+procedure sum_array_b();
+var i:integer;
+begin
+    for i:=1 to n do
+    if b[i] > 0 then
+    begin
+      sum_b:=sum_b + b[i];
+    end;
+end;
 begin
   for i:=1 to n do
   begin
@@ -15,16 +33,8 @@ begin
     write('b[',i,'] = ');
     read(b[i]);
   end;
-  for i:=1 to n do
-    if a[i] > 0 then
-    begin
-      sum_a:=sum_a + a[i];
-    end;
-  for i:=1 to n do
-    if b[i] > 0 then
-    begin
-      sum_b:=sum_b + b[i];
-    end;
+  sum_array_a();
+  sum_array_b();
   if sum_a < sum_b then
     for i:=1 to n do
     begin
