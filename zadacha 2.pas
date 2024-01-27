@@ -1,0 +1,33 @@
+﻿program z2;
+uses GraphABC;
+begin
+  SetWindowWidth(800);
+  SetWindowHeight(800);
+  SetPenColor(clBlack);
+  Circle(50,100,25);
+  FloodFill(50,100,clBlue);
+  MoveTo(56,125);
+  LineTo(150,350);
+  LineTo(250,350);
+  LineTo(270,260);
+  LineTo(70,115);
+  FloodFill(159,240,clBlue);
+  Circle(325,25,25);
+  FloodFill(325,25,clRed);
+  MoveTo(250,350);
+  LineTo(320,50);
+  MoveTo(250,350);
+  LineTo(400,350);
+  MoveTo(400,350);
+  LineTo(335,48);
+  FloodFill(326,250,clRed);
+  Circle(600,75,25);
+  FloodFill(600,75,clLime);
+  MoveTo(400,350);
+  LineTo(500,350);
+  LineTo(600,100);
+  MoveTo(400,350);
+  LineTo(380,260);
+  LineTo(580,90);
+  FloodFill(477,250,clLime);
+end.
